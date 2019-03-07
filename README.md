@@ -1,3 +1,12 @@
+
+
+
+
+# Important 
+
+this setup is not mine all the credits go to @https://github.com/Capgemini-AIE 
+it's modified version using the proof of authority consensus with some minor changes if u wanna use Proof of work u can always go and check out the original repo here https://github.com/Capgemini-AIE/ethereum-docker
+
 # Ethereum Docker
 
 Get started creating Ethereum development and test single and multi-node clusters
