@@ -1,7 +1,10 @@
 #!/bin/bash
 set -e
+sleep 3
 cd /root/eth-net-intelligence-api
+sleep 3
 perl -pi -e "s/XXX/$(hostname)/g" app.json
+sleep 3
 /usr/bin/pm2 start ./app.json
 sleep 3
 geth --datadir=~/.ethereum/devchain init "/root/files/genesis.json"
