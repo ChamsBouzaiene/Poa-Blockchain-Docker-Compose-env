@@ -21,6 +21,7 @@ services:
   eth-miner1:
     build: monitored-geth-client
     restart: on-failure
+    container_name: eth-miner1
     links:
       - bootstrap
       - netstats
@@ -34,6 +35,7 @@ services:
   eth-miner2:
     build: monitored-geth-client
     restart: on-failure
+    container_name: eth-miner2
     links:
       - bootstrap
       - netstats
@@ -47,6 +49,7 @@ services:
   eth-miner3:
     build: monitored-geth-client
     restart: on-failure
+    container_name: eth-miner3
     links:
       - bootstrap
       - netstats
