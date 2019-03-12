@@ -16,7 +16,7 @@
       "INSTANCE_NAME": "XXX",
       "WS_SERVER": "ws://netstats:3000",
       "WS_SECRET": "eth-net-stats-secret",
-      "VERBOSITY": 9
+      "VERBOSITY": 2
     }
   }
 ]
