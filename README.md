@@ -4,10 +4,7 @@
 
 [![N|Solid](https://i.imgur.com/DeFxZfP.png)](https://www.linkedin.com/in/chamsddine-bouzaine-44742060/)
 
-# Important 
 
-this setup is not oraginaly mine it's inspired from the setup of @https://github.com/Capgemini-AIE 
-i cloned the repo an introduced some major changes for my development purpose so i can use a POA Network but am planning to further change the setup and add a faucet to the stack so this modified version using the proof of authority consensus with some minor changes if u wanna use Proof of work u can always go and check out this repo here https://github.com/Capgemini-AIE/ethereum-docker
 
 # Ethereum Docker
 
