@@ -1,8 +1,8 @@
 FROM nginx:1.11.10
 
-COPY nginx.conf /etc/nginx/nginx.conf 
-COPY docker-entrypoint.sh /
 
+ADD nginx.conf /etc/nginx/nginx.conf 
+ADD docker-entrypoint.sh /root/docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx"]
 
