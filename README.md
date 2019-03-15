@@ -1,6 +1,9 @@
 
 
 # Poa-Blockchain-Docker-Compose-env
+
+[![N|Solid](https://i.imgur.com/DeFxZfP.png)](https://www.linkedin.com/in/chamsddine-bouzaine-44742060/)
+
 # Important 
 
 this setup is not oraginaly mine it's inspired from the setup of @https://github.com/Capgemini-AIE 
