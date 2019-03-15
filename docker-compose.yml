@@ -77,6 +77,7 @@ services:
   nginx_proxy:
     build: nginx
     restart: on-failure
+    entrypoint: /root/docker-entrypoint.sh
     environment:
       - NGINX_PROXY_HTPASSWD_DOMAIN=phpmyadmin
       - NGINX_PROXY_HTPASSWD_USERNAME=admin
