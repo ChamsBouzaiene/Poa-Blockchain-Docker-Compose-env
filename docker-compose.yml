@@ -74,14 +74,14 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
-    nginx_proxy:
-      build: nginx
-      restart: on-failure
-      environment:
-        NGINX_PROXY_HTPASSWD_DOMAIN=phpmyadmin
-        NGINX_PROXY_HTPASSWD_USERNAME=admin
-        NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
-      links:
-       - bootstrap
-       ports:
-        - 8881:8080
+  nginx_proxy:
+    build: nginx
+    restart: on-failure
+    environment:
+      - NGINX_PROXY_HTPASSWD_DOMAIN=phpmyadmin
+      - NGINX_PROXY_HTPASSWD_USERNAME=admin
+      - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
+    links:
+      - bootstrap
+    ports:
+      - 8881:8080
