@@ -15,8 +15,5 @@ sed -i -e "s/NGINX_PROXY_HTPASSWD_DOMAIN/$NGINX_PROXY_HTPASSWD_DOMAIN/g"  /etc/n
 
 echo ${NGINX_PROXY_HTPASSWD_DOMAIN}
 
-if [ "$1" = 'nginx' ]; then
-    exec nginx -g 'daemon off;';
-fi
 
-exec nginx -g 'daemon off;'
+exec nginx -g 'daemon off;';

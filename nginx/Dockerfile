@@ -8,5 +8,6 @@ RUN chmod +x /root/docker-entrypoint.sh
 
 ENTRYPOINT root/docker-entrypoint.sh
 
-EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
+
+EXPOSE 8080
