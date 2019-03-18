@@ -74,8 +74,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
-    links:
-      - server
+   
   server:
     build: nginx
     restart: on-failure
@@ -86,3 +85,5 @@ services:
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
     ports:
       - 81:81
+     links:
+      - netstats
