@@ -86,3 +86,4 @@ services:
       - netstats
     ports:
       - 81:81
+    tty: true
