@@ -86,4 +86,4 @@ services:
     ports:
       - 81:81
     links:
-      - netstats
+      - bootstrap
