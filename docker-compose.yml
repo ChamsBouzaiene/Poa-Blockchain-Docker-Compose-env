@@ -76,7 +76,7 @@ services:
       - "3000:3000"
     links:
       - server
-    server:
+  server:
     build: nginx
     restart: on-failure
     entrypoint: /root/docker-entrypoint.sh
@@ -86,4 +86,3 @@ services:
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
     ports:
       - 81:81
-
