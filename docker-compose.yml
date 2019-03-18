@@ -83,6 +83,6 @@ services:
       - NGINX_PROXY_HTPASSWD_USERNAME=admin
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
     links:
-      - bootstrap
+      - netstats
     ports:
       - 8881:8080
