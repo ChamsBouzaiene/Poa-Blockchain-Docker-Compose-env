@@ -75,7 +75,7 @@ services:
     ports:
       - "3000:3000"
 
-  server:
+  serverr:
     build: nginx
     restart: on-failure
     entrypoint: /root/docker-entrypoint.sh
