@@ -79,7 +79,7 @@ services:
     restart: on-failure
     entrypoint: /root/docker-entrypoint.sh
     environment:
-      - NGINX_PROXY_HTPASSWD_DOMAIN=netstats
+      - NGINX_PROXY_HTPASSWD_DOMAIN=http://localhost:3000
       - NGINX_PROXY_HTPASSWD_USERNAME=admin
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
     links:
