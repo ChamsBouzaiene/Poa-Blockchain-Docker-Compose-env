@@ -8,7 +8,12 @@ if [ -z $NGINX_PROXY_HTPASSWD_DOMAIN ]; then
    NGINX_PROXY_HTPASSWD_DOMAIN="proxy_service"
 fi
 
+echo ${NGINX_PROXY_HTPASSWD_DOMAIN}
+echo heyyyyyyyyyy!
+
 sed -i -e "s/NGINX_PROXY_HTPASSWD_DOMAIN/$NGINX_PROXY_HTPASSWD_DOMAIN/g"  /etc/nginx/nginx.conf
+
+echo ${NGINX_PROXY_HTPASSWD_DOMAIN}
 
 if [ "$1" = 'nginx' ]; then
     exec nginx -g 'daemon off;';
