@@ -74,7 +74,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
-  newtest:
+  server:
     build: nginx
     restart: on-failure
     entrypoint: /root/docker-entrypoint.sh
