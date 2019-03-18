@@ -85,4 +85,4 @@ services:
     links:
       - netstats
     ports:
-      - 8881:8080
+      - 81:81
