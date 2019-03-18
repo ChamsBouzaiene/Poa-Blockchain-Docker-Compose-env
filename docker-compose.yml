@@ -82,9 +82,6 @@ services:
       - NGINX_PROXY_HTPASSWD_DOMAIN=localhost:3000
       - NGINX_PROXY_HTPASSWD_USERNAME=admin
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
-    links:
-      - netstats
-      - bootstrap
     ports:
       - 81:81
     tty: true
