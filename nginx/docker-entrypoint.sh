@@ -4,9 +4,9 @@
 printf "$NGINX_PROXY_HTPASSWD_USERNAME:$(openssl passwd -apr1 $NGINX_PROXY_HTPASSWD_PASSWORD)\n" > /etc/nginx/htpasswd
 
 # The proxy replacement
-if [ -z $NGINX_PROXY_HTPASSWD_DOMAIN ]; then
-   NGINX_PROXY_HTPASSWD_DOMAIN="proxy_service"
-fi
+# if [ -z $NGINX_PROXY_HTPASSWD_DOMAIN ]; then
+#    NGINX_PROXY_HTPASSWD_DOMAIN="proxy_service"
+# fi
 
 echo ${NGINX_PROXY_HTPASSWD_DOMAIN}
 echo heyyyyyyyyyy!
