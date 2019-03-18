@@ -84,6 +84,7 @@ services:
       - NGINX_PROXY_HTPASSWD_PASSWORD=mysuperpassasd
     links:
       - netstats
+      - bootstrap
     ports:
       - 81:81
     tty: true
